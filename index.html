@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guessing Game</h1>
+      <div class="btns">
+        <button class="easy" onclick="setDiffulty('easy')">Easy</button>
+        <button class="medium" onclick="setDiffulty('medium')">Medium</button>
+        <button class="hard" onclick="setDiffulty('hard')">Hard</button>
+      </div>
+      <div class="wrapper">
+        <label for="guessfield" id="guess">Enter Number :</label>
+        <input type="text" class="guessfield" id="guessfield" disabled />
+        <button class="submit" onclick="checkGuess()" disabled>Submit</button>
+      </div>
+      <div class="result">
+        <p class="message"></p>
+        <p class="prevnum"></p>
+        <p class="remGus"></p>
+        <p class="res"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

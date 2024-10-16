@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    #1b1b1b,
+    /* Dark grey */ #333333,
+    /* Blackish grey */ #0f0f0f,
+    /* Pure black */ #00796b /* Dark teal accent */
+  ); /* Legendary dark gradient with teal */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8); /* Stronger shadow for a floating effect */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Transparent white to show gradient through */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  text-align: center;
+  color: #e0e0e0; /* Light grey text */
+}
+
+.container h1 {
+  font-size: 1.8rem;
+  color: #cccccc; /* Soft grey text for a premium vibe */
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Bold and legendary feel */
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.easy,
+.medium,
+.hard {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.1rem;
+  background: linear-gradient(
+    135deg,
+    #00796b,
+    /* Dark teal */ #000000 /* Pure black */
+  ); /* Sleek gradient buttons */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.easy:hover,
+.medium:hover,
+.hard:hover {
+  background: linear-gradient(
+    135deg,
+    #009688,
+    /* Slightly lighter teal */ #222222 /* Soft black */
+  ); /* Lighter hover effect */
+  transform: scale(1.05); /* Slight pop-out on hover */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.guessfield {
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 121, 107, 0.2),
+    /* Transparent dark teal */ rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+  ); /* Gradient background for input */
+  padding-left: 15px;
+  font-size: 1rem;
+  color: #f5f5f5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow for input */
+}
+
+.submit {
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #00796b,
+    /* Dark teal */ #000000 /* Pure black */
+  ); /* Gradient background for submit button */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submit:hover {
+  background: linear-gradient(
+    135deg,
+    #009688,
+    /* Lighter teal */ #222222 /* Soft black */
+  );
+  transform: scale(1.05); /* Slight pop-out on hover */
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #d3d3d3; /* Softer grey for results text */
+}
+
+.result .prevnum,
+.result .remGus {
+  font-weight: bold;
+  color: #f0f0f0; /* Brighter grey for better visibility */
+}
+
+/* Small device specific styling */
+@media (max-width: 480px) {
+  .container {
+    margin: 20% auto;
+    padding: 20px 15px;
+  }
+
+  .container h1 {
+    font-size: 1.4rem;
+  }
+
+  .easy,
+  .medium,
+  .hard {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .guessfield,
+  .submit {
+    font-size: 0.95rem;
+  }
+
+  .result p {
+    font-size: 0.9rem;
+  }
+}
