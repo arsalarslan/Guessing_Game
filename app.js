@@ -15,17 +15,17 @@ function setDiffulty(level) {
     const guessinput = document.getElementById("guessfield");
 
     if (level === "easy") {
-        rangeMax = 10;
+        rangeMax = 25;
         maxGuesses = 6;
-        message.textContent = "Easy Mode: Guess a number between 1 and 10.";
+        message.textContent = "Easy Mode: Guess a number between 1 and 25.";
     } else if (level === "medium") {
-        rangeMax = 15;
+        rangeMax = 50;
         maxGuesses = 4;
-        message.textContent = "Medium Mode: Guess a number between 1 and 15.";
+        message.textContent = "Medium Mode: Guess a number between 1 and 50.";
     } else if (level === "hard") {
-        rangeMax = 20;
+        rangeMax = 100;
         maxGuesses = 3;
-        message.textContent = "Hard Mode: Guess a number between 1 and 20.";
+        message.textContent = "Hard Mode: Guess a number between 1 and 100.";
     }
 
     guessinput.min = 1;
