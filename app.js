@@ -5,8 +5,8 @@ let maxGuesses;
 let rangeMax;
 let isGameActive = false;
 
-let winAudio = new Audio("audios/winning.mp3")
-let loseAudio = new Audio("audios/loosing.mp3")
+let winAudio = new Audio("winning.mp3")
+let loseAudio = new Audio("loosing.mp3")
 
 // set difficulty level
 function setDiffulty(level) {
